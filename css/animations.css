@@ -1,0 +1,13 @@
+@keyframes grad{50%{background-position:100% 50%}}
+@keyframes rise{from{transform:translateY(0) rotate(0)}to{transform:translateY(-115vh) rotate(40deg)}}
+@keyframes twinkle{50%{opacity:.1;transform:scale(2)}}
+@keyframes beat{0%,40%,100%{transform:scale(1)}20%,60%{transform:scale(1.2)}}
+@keyframes blink{50%{opacity:0}}
+@keyframes flame{from{transform:scale(1) rotate(-3deg)}to{transform:scale(1.1,1.15) rotate(3deg)}}
+@keyframes dash{to{background-position:16px 0}}
+@keyframes travel{from{left:0}to{left:calc(100% - 24px)}}
+@keyframes eq{from{height:3px}to{height:12px}}
+@keyframes burst{to{transform:translate(var(--x),var(--y)) scale(1.5);opacity:0}}
+@keyframes pulse{50%{box-shadow:0 0 45px rgba(255,77,141,.95);transform:scale(1.05)}}
+.pulse{animation:pulse 2s infinite}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal,.tl,.fl{opacity:1;transform:none}}
